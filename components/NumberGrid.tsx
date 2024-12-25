@@ -12,7 +12,7 @@ export default function NumberGrid({ drawnNumbers }: NumberGridProps) {
           {drawnNumbers.includes(num) ? (
             <NumberBall number={num} />
           ) : (
-            <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-500 text-sm font-bold">
+            <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-400 text-sm font-bold dark:bg-gray-800 dark:text-gray-200">
               {num}
             </div>
           )}
