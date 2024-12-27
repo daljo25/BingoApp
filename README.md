@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BingoApp
 
-## Getting Started
+BingoApp es una aplicación interactiva diseñada para gestionar partidas de bingo de 90 números. Permite realizar las siguientes funciones:
 
-First, run the development server:
+- 🎲 Mostrar las bolas sorteadas y llevar un registro visual de los números salidos.
+- ✅ Comprobar si una línea o un bingo es válido según los cartones almacenados en un archivo JSON.
+- 💰 Proporcionar un cálculo automático del premio basado en el total recaudado por la venta de tickets.
 
+## Requisitos previos
+
+Asegúrate de tener instalados los siguientes componentes:
+- 📦 Node.js (v18 o superior)
+- 🚀 PNPM (v8 o superior)
+
+## Instalación
+
+1. 🛠️ Clona este repositorio en tu máquina local:
+   ```bash
+   git clone https://github.com/daljo25/BingoApp.git
+   ```
+
+2. 📂 Navega al directorio del proyecto:
+   ```bash
+   cd BingoApp
+   ```
+
+3. 📥 Instala las dependencias utilizando PNPM:
+   ```bash
+   pnpm install
+   ```
+
+## Ejecución en desarrollo
+
+Para correr la aplicación localmente, ejecuta el siguiente comando:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto iniciará el servidor de desarrollo. Por defecto, la aplicación estará disponible en [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Construcción para producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Si deseas construir la aplicación para producción, utiliza:
+```bash
+pnpm build
+```
 
-## Learn More
+## Previsualización de la versión construida
 
-To learn more about Next.js, take a look at the following resources:
+Después de construir la aplicación, puedes previsualizarla con:
+```bash
+pnpm preview
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notas importantes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ❌ Esta aplicación **no incluye un generador de tickets**. Para jugar, necesitas tener tickets físicos que cumplan con el formato de Bingo Inglés:
+  - 90 números.
+  - 3 filas y 9 columnas.
+  - Cada fila contiene 5 números y 4 espacios en blanco.
+  - Los tickets deben estar **serializados**.
+- 🗂️ Si deseas utilizar los botones de validación, debes cargar los tickets en el archivo `libs/tickets.ts`.
 
-## Deploy on Vercel
+## Tecnologías utilizadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ⚛️ **Next.js**: Framework de React para aplicaciones web modernas.
+- 🎨 **Tailwind CSS**: Framework para diseño de interfaces.
+- 🧩 **ShadCN**: Componentes accesibles y personalizables.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contribución
+
+Si deseas contribuir al desarrollo de BingoApp, sigue estos pasos:
+1. 🍴 Haz un fork del repositorio.
+2. 🌱 Crea una rama para tu funcionalidad o corrección de errores:
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+3. ✏️ Realiza tus cambios y confirma los commits:
+   ```bash
+   git commit -m "Descripción de los cambios"
+   ```
+4. 🔄 Envía tus cambios al repositorio remoto:
+   ```bash
+   git push origin feature/nueva-funcionalidad
+   ```
+5. 📬 Abre un Pull Request.
+
+## Licencia
+
+Este proyecto está licenciado bajo la [Licencia MIT con atribución](LICENSE).
+
+Es importante mantener los créditos al autor original al utilizar, modificar o distribuir este software. ¡Gracias por respetarlo! 😊
+
+---
+
+¡Gracias por usar BingoApp! 🎉 Si tienes alguna duda o sugerencia, no dudes en abrir un issue en el repositorio.
