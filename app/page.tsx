@@ -7,6 +7,8 @@ import NumberGrid from '@/components/NumberGrid'
 import VerificationButtons from '@/components/VerificationButtons'
 import VerificationModal from '@/components/VerificationModal'
 import Footer from '@/components/Footer'
+import CalculatePrizes from '@/components/CalculatePrizes'
+import {PopoverDemo} from '@/components/Pop'
 
 export default function BingoApp() {
   const [drawnNumbers, setDrawnNumbers] = useState<number[]>([])
@@ -53,26 +55,27 @@ export default function BingoApp() {
       <main className="container mx-auto px-4 py-8 flex-grow">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-grow">
-            <MainBoard 
-              lastNumber={drawnNumbers[0]} 
-              lastThreeNumbers={drawnNumbers.slice(0, 3)} 
+            <MainBoard
+              lastNumber={drawnNumbers[0]}
+              lastThreeNumbers={drawnNumbers.slice(0, 3)}
               onDrawNumber={drawNumber}
             />
             <VerificationButtons onVerifyLine={() => openModal('line')} onVerifyBingo={() => openModal('bingo')} />
+            <div className='flex items-center justify-center mt-4'><PopoverDemo /></div>
           </div>
           <NumberGrid drawnNumbers={drawnNumbers} />
         </div>
       </main>
       <footer><Footer /></footer>
-      
-      <VerificationModal 
-        isOpen={isModalOpen} 
-        onClose={closeModal} 
+
+      <VerificationModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
         onVerify={verifyCard}
         type={modalType}
       />
     </div>
-    
+
   )
 }
 
