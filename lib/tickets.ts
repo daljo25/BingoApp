@@ -57,7 +57,7 @@ const tickets: Record<string, Ticket> = {
     row3: [5, null, 26, null, null, 53, 69, null, 82],
   },
   11: {
-    row1: [null, 12, null, 48, null, 57, null, 78, 85],
+    row1: [null, 12, null, 48, null, 52, null, 78, 85],
     row2: [7, null, 29, null, 46, null, null, 75, 88],
     row3: [null, 19, 23, null, null, 57, 60, null, 90],
   },
@@ -68,13 +68,13 @@ const tickets: Record<string, Ticket> = {
   },
   13: {
     row1: [8, null, 21, null, 42, null, 63, 75, null],
-    row2: [null, 14, 26, 33, null, 52, null, null, 80],
-    row3: [null, null, null, 38, 49, 56, 68, null, 84],
+    row2: [null, 14, 26, 33, null, 50, null, null, 80],
+    row3: [null, null, null, 38, 47, 56, 68, null, 84],
   },
   14: {
     row1: [null, 18, null, 36, null, 55, 60, null, 87],
     row2: [9, 15, null, null, 40, 59, null, 72, null],
-    row3: [3, null, 29, null, 49, null, 64, 79, null],
+    row3: [3, null, 20, null, 49, null, 64, 79, null],
   },
   15: {
     row1: [null, 12, null, 39, null, 52, 66, null, 83],
@@ -82,12 +82,12 @@ const tickets: Record<string, Ticket> = {
     row3: [5, null, 28, null, 45, null, 69, 77, null],
   },
   16: {
-    row1: [1, null, 23, null, 41, 53, null, 73, null],
+    row1: [1, null, 24, null, 41, 53, null, 73, null],
     row2: [4, 10, 27, 35, null, null, 61, null, null],
     row3: [null, 16, 29, null, 46, null, 67, null, 82],
   },
   17: {
-    row1: [2, 13, null, null, 48, null, 62, null, 81],
+    row1: [13, null, null, null, 48, null, 62, null, 81],
     row2: [null, 17, null, 30, 43, null, null, 70, 86],
     row3: [null, null, 22, 34, null, 54, null, 76, 88],
   },
@@ -108,7 +108,7 @@ const tickets: Record<string, Ticket> = {
   },
   21: {
     row1: [7, null, 23, null, 41, null, 62, 70, null],
-    row2: [null, 10, null, 35, null, 53, 66, null, 87],
+    row2: [null, 10, null, 32, null, 53, 66, null, 87],
     row3: [null, 13, 28, null, 44, 59, null, null, 89],
   },
   22: {

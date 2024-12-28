@@ -34,6 +34,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -66,7 +67,39 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@media print {
+  .ticket {
+    page-break-inside: avoid;
+    /* Evita cortar tickets entre páginas */
+    margin-bottom: 1rem;
+    /* Espacio entre tickets */
+  }
+
+  .cell {
+    width: 40px;
+    /* Ajusta el tamaño de las celdas para impresión */
+    height: 40px;
+    border: 1px solid black;
+    /* Borde visible en impresión */
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+
+  .empty {
+    background-color: #f0f0f0 !important;
+    /* Asegura el gris en celdas vacías */
+  }
+
+  .ticket-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
   }
 }
