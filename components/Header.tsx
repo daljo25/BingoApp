@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/ModeToggle"
-import { Printer, RotateCcw, Globe, LoaderPinwheel } from "lucide-react"
+import { Printer, RotateCcw, LoaderPinwheel } from "lucide-react"
 import Link from "next/link"
 
 export default function Header({ onNewGame }: { onNewGame: () => void }) {
