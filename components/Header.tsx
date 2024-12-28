@@ -9,14 +9,16 @@ export default function Header({ onNewGame }: { onNewGame: () => void }) {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center justify-center gap-2 text-3xl font-bold ">
           <LoaderPinwheel className="animate-spin-slow" />Bingo
-          </div>
+        </div>
         <div className="flex space-x-4">
           <Button variant="destructive" onClick={onNewGame}>
-            <RotateCcw/>Nueva Partida
+            <RotateCcw />
+            <span className="hidden md:inline">Nueva Partida</span>
           </Button>
           <Button variant="default" asChild>
             <Link href="/tickets">
-              <Printer/>Tickets
+              <Printer />
+              <span className="hidden md:inline">Tickets</span>
             </Link>
           </Button>
           <ModeToggle />
