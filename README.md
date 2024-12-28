@@ -54,12 +54,14 @@ pnpm preview
 
 ## Notas importantes
 
+- 🖨 Ahora puedes **imprimir tickets de demostración** desde la ruta `/tickets`. Los tickets impresos son ejemplos estáticos y no se generan de manera dinámica.
 - ❌ Esta aplicación **no incluye un generador de tickets**. Para jugar, necesitas tener tickets físicos que cumplan con el formato de Bingo Inglés:
   - 90 números.
   - 3 filas y 9 columnas.
   - Cada fila contiene 5 números y 4 espacios en blanco.
   - Los tickets deben estar **serializados**.
-- 🗂️ Si deseas utilizar los botones de validación, debes cargar los tickets en el archivo `libs/tickets.ts`.
+- 🗂️ Si deseas utilizar los botones de validación, debes cargar los tickets en el archivo `lib/tickets.ts`.
+- 🔧 Si deseas contribuir, puedes implementar la funcionalidad para generar tickets automáticamente y cargarlos en `lib/tickets.ts` para facilitar su validación e impresion.
 
 ## Tecnologías utilizadas
 
