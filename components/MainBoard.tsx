@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import NumberBall from "@/components/NumberBall"
+import NumberText from "@/components/NumberText"
 import { useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -26,9 +27,12 @@ export default function MainBoard({ lastNumber, lastThreeNumbers, onDrawNumber }
 
   return (
     <div className="text-center mb-8">
-      <div className="mb-4 flex justify-center">
+      <div className="mb-4 flex flex-col items-center">
         {lastNumber ? (
+          <>
           <NumberBall number={lastNumber} size="lg" animate={true} />
+          <NumberText number={lastNumber} />
+        </>
         ) : (
           <div className="w-32 h-32 flex items-center justify-center text-6xl font-bold">?</div>
         )}
