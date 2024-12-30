@@ -13,7 +13,7 @@ export function PopoverDemo() {
             <PopoverTrigger>
                 <Button>Calcular premios</Button>
             </PopoverTrigger>
-            <PopoverContent className="w-full">
+            <PopoverContent>
                 <CalculatePrizes />
             </PopoverContent>
         </Popover>

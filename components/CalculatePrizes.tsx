@@ -37,7 +37,7 @@ export default function PrizeCalculator() {
         <div className="space-y-4 ">
           <div className="flex items-center justify-center space-x-4">
             <div className="flex flex-col">
-              <label className="text-sm font-medium text-gray-700 mb-1">
+              <label className="text-sm font-medium mb-1">
                 Precio (€)
               </label>
               <Input
@@ -45,11 +45,11 @@ export default function PrizeCalculator() {
                 value={ticketPrice}
                 onChange={(e) => setTicketPrice(e.target.value)}
                 placeholder="0.0"
-                className="w-50"
+                className="col-span-2"
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-sm font-medium text-gray-700 mb-1">
+              <label className="text-sm font-medium mb-1">
                 Vendidos
               </label>
               <Input
@@ -57,7 +57,7 @@ export default function PrizeCalculator() {
                 value={ticketsSold}
                 onChange={(e) => setTicketsSold(e.target.value)}
                 placeholder="0"
-                className="w-50"
+                className="col-span-2"
               />
             </div>
           </div>
@@ -70,13 +70,13 @@ export default function PrizeCalculator() {
           </Button>
           <div className="mt-4">
             <h3 className="text-lg font-semibold">Resultados:</h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm">
               Total Recaudado: <span className="font-medium">€{totalRevenue.toFixed(2)}</span>
             </p>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm">
               Premio por Línea: <span className="font-medium">€{linePrize.toFixed(2)}</span>
             </p>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm">
               Premio por Bingo: <span className="font-medium">€{bingoPrize.toFixed(2)}</span>
             </p>
           </div>
