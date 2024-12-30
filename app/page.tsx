@@ -48,13 +48,13 @@ export default function BingoApp() {
         toast({
           title: "¡Línea correcta!",
           description: "El juego continúa hacia el bingo.",
-          variant: "default",
+          variant: "success",
         })
       } else {
         toast({
           title: "¡BINGO!",
           description: "¡Felicidades! La partida ha terminado.",
-          variant: "default",
+          variant: "success",
         })
         setShowConfetti(true)
         setTimeout(() => setShowConfetti(false), 5000) // Detener el confeti después de 5 segundos
